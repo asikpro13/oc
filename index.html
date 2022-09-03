@@ -6,25 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="/css/main.css" rel="stylesheet">
 </head>
 
-<body>
-    <header>
+<body class="dark:bg-black">
+    <header class="relative">
         <div class="container">
-            <nav class="pt-8">
-                <ul class="flex justify-around items-center gap-12 md:hidden">
-                    <li><a href="#" class="font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Example</a></li>
-                    <li><a href="#" class="font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Example</a></li>
-                    <li><a href="#" class="font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Example</a></li>
-                    <li><a href="#" class="font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Example</a></li>
-                    <li><a href="#" class="font-medium text-xl text-lightblack hover:text-darkred transition-colors lg:text-base">Example</a></li>
+            <nav class="flex justify-between items-center pt-8">
+                <p class="text-4xl lg:text-3xl dark:text-white">015</p>
+                <ul class="flex justify-around gap-12 md:hidden">
+                    <li><a href="#"
+                            class="font-semibold text-xl text-lightblack hover:text-darkred transition-colors lg:text-base dark:text-white">Часть
+                            1</a>
+                    </li>
+                    <li><a href="#"
+                            class="font-semibold text-xl text-lightblack hover:text-darkred transition-colors lg:text-base dark:text-white">Часть
+                            2</a>
+                    </li>
+                    <li><a href="#"
+                            class="font-semibold text-xl text-lightblack hover:text-darkred transition-colors lg:text-base dark:text-white">Часть
+                            3</a>
+                    </li>
+                    <li><a href="#"
+                            class="font-semibold text-xl text-lightblack hover:text-darkred transition-colors lg:text-base dark:text-white">Часть
+                            4</a>
+                    </li>
+                    <li><a href="#"
+                            class="font-semibold text-xl text-lightblack hover:text-darkred transition-colors lg:text-base dark:text-white">Часть
+                            5</a>
+                    </li>
                 </ul>
+
+                <ul id="menu" class="absolute left-6 right-6 top-24 bg-lightred flex-col items-center hidden">
+                    <li><a href="#" class="block py-4 text-white">Часть 1</a></li>
+                    <li><a href="#" class="block py-4 text-white">Часть 2</a></li>
+                    <li><a href="#" class="block py-4 text-white">Часть 3</a></li>
+                    <li><a href="#" class="block py-4 text-white">Часть 4</a></li>
+                    <li><a href="#" class="block py-4 text-white">Часть 5</a></li>
+                </ul>
+
+                <div class="burger hidden md:block">
+                    <span class="burger-line top-line"></span>
+                    <span class="burger-line mid-line"></span>
+                    <span class="burger-line bottom-line"></span>
+                </div>
             </nav>
         </div>
     </header>
+
+    <main>
+        <div class="starting">
+            <div class="container my-40 flex flex-col items-center lg:mt-16 md:mt-11 sm:mt-10">
+                <h1
+                    class="font-bold text-5xl leading-tight lg:text-4xl md:text-3xl sm:text-2xl sm:w-full dark:text-white">
+                    История
+                    операционных систем</h1>
+                <p class="mt-5 text-base leading-6 max-w-2xl sm:w-full dark:text-white">Подготовили студенты 015-й
+                    группы Курбанов
+                    Манучехр
+                    и Мазурек Вадим</p>
+                <div class="flex justify-center sm:flex-col gap-5 mt-8 w-full sm:mt-5 sm:gap-3">
+                    <a href="#" class="btn sm:w-full sm:py-2 sm:px-6 sm:text-base sm:text-center">Начать</a>
+                    <a href="#"
+                        class=" px-8 py-3 rounded-2xl text-lightred tracking-tight text-xl border-2 border-lightred sm:w-full sm:py-2 sm:px-6 sm:text-base sm:text-center">Github</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="chapterOne">
+            <div class="container">
+                <div class="flex lg:block mt-72">
+                    <div class="flex-col w-1/2 lg:w-full">
+                        <p class="text-lightred text-xl font-bold">Часть 1</p>
+                        <h2 class="text-4xl font-bold mt-3 lg:w-full md:text-3xl dark:text-white">Что такое операционная
+                            система?</h2>
+                        <h3 class="text-xl mt-2 max-w-[500px] lg:max-w-full dark:text-white"><span
+                                class="termin">Операционная
+                                система</span> — комплекс взаимосвязанных программ, предназначенных для управления
+                            ресурсами компьютера и организации взаимодействия с пользователем. Простыми словами
+                            операционные системы позволяют человеку эффективно и безопастно пользоваться той или иной техникой.</h1>
+                            <div class="my-10 lg:my-7 md:my-4">
+                                <a href="#" class="btn md:flex md:justify-center">Далее</a>
+                            </div>
+                    </div>
+                    <div class="flex-col w-1/2 md:w-full">
+                        <img src="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                            alt="Photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chapterTwo">
+            <div class="container">
+                <div class="flex lg:block mt-40">
+                    <div class="flex-col w-1/2 lg:w-full">
+                        <p class="text-lightred text-xl font-bold">Часть 2</p>
+                        <h2 class="text-4xl font-bold mt-3 lg:w-full md:text-3xl dark:text-white">Где применяются
+                            операционные системы?</h2>
+                        <h3 class="text-xl mt-2 max-w-[500px] lg:max-w-full dark:text-white">Операционные системы
+                            реального времени <span class="termin">применяются</span> для управления
+                            компьютерными приложениями и компонентами в сетевых маршрутизаторах и коммутаторах, в
+                            автомобилях, в мобильных телефонах, в медицинских приборах, в промышленном
+                            измерительном и контрольном оборудовании, а также во множестве других приборах</h1>
+                            <div class="my-10 lg:my-7 md:my-4">
+                                <a href="#" class="btn md:flex md:justify-center">Далее</a>
+                            </div>
+                    </div>
+                    <div class="flex-col w-1/2 md:w-full">
+                        <img src="https://zhuk.ua/content/uploads/images/bittechallmini%281%29.jpg" alt="Photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chapterThree">
+            <div class="container">
+                <div class="flex lg:block mt-40">
+                    <div class="flex-col w-1/2 lg:w-full">
+                        <p class="text-lightred text-xl font-bold">Часть 3</p>
+                        <h2 class="text-4xl font-bold mt-3 lg:w-full md:text-3xl dark:text-white">Примеры операционных
+                            систем</h2>
+                        <h3 class="text-xl mt-2 max-w-[500px] lg:max-w-full dark:text-white">На данный момент существует
+                            огромное количество операционных систем под все виды электроники. Например самыми
+                            популярными ОС под ПК, ноутбуки являются Windows, MasOs, ChromeOs и Linux. Для смартфонов и
+                            планшетов - Android, IOS</h1>
+                            <div class="my-10 lg:my-7 md:my-4">
+                                <a href="#" class="btn md:flex md:justify-center">Далее</a>
+                            </div>
+                    </div>
+                    <div class="flex-col w-1/2 md:w-full">
+                        <img src="https://ks-intel.ru/wp-content/uploads/2018/05/Computer-operating-system.jpg"
+                            alt="Photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="bg-black mt-5">
+            <div class="py-7 text-center">
+                <p class="text-gray-600">© Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+    <button id="modeDark" class="btn bg-black shadow-none fixed bottom-1 right-1">Dark Mode</button>
+    <button id="modeWhite" class="btn hidden shadow-none fixed bottom-1 right-1"
+        style="background: #fff; color: #000;">White Mode</button>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

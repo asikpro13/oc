@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./*.html"],
+  darkMode: 'class',
   theme: {
     screens: {
       'lg': { 'max': '992px' },
@@ -18,7 +19,11 @@ module.exports = {
         darkred: '#D70026',
         lightgray: '#747474',
         darkgray: '#272727',
+      },
+      boxShadow: {
+        'customred': '0px 0px 30px rgba( 255, 13, 56, 0.21 )',
       }
+
     },
   },
   plugins: [],
