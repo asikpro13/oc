@@ -21,6 +21,18 @@
     .termin {
         @apply text-lightred font-bold
     }
+
+    .title {
+        @apply font-bold text-4xl lg:text-3xl md:text-2xl sm:text-xl text-center
+    }
+
+    .subtitle {
+        @apply text-base indent-14 sm:indent-0 text-justify max-w-5xl mx-auto
+    }
+
+    .back {
+        @apply hover:underline text-lightred text-base
+    }
 }
 
 .burger {
